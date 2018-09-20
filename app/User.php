@@ -27,4 +27,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get all of favorite posts for the user.
+     * 
+     * 
+     */
+
+     public function favorites()
+     {
+         return $this->belongsToMany(Post::class, 'favorites', 'user_id', 'post_id')->withTimeStamps();
+     }
 }
