@@ -49,6 +49,9 @@
                                 @endif
                             </li>
                         @else
+                            <li>
+                                <a href="{{ url('my_favorites')}}"> My Favorites</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -76,5 +79,7 @@
             @yield('content')
         </main>
     </div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </body>
 </html>
