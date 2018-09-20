@@ -23,7 +23,7 @@ $factory->define(App\User::class, function (Faker $faker) {
     ];
 });
 
-$factory->define(App\Post::class, function (Faker\Generator $faker) {
+$factory->define(App\Post::class, function (Faker $faker) {
     // Get a random user
     $user = \App\User::inRandomOrder()->first();
 
