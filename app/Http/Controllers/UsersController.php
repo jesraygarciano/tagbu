@@ -13,10 +13,10 @@ class UsersController extends Controller
      * @return response
      */
 
-     public function myFavorites(){
-
-        $myFavorites = Auth::users()->favorites;
-
+    public function myFavorites()
+    {
+        $myFavorites = Auth::user()->favorites;
+    
         return view('users.my_favorites', compact('myFavorites'));
-     }
+    }
 }
