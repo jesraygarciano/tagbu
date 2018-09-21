@@ -47387,9 +47387,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         unFavorite: function unFavorite(post) {
             var _this2 = this;
 
-            axios.post('/unfavorite/' + post).then(function (reponse) {
+            axios.post('/unfavorite/' + post).then(function (response) {
                 return _this2.isFavorited = false;
-            }).catch(function (reponse) {
+            }).catch(function (response) {
                 return console.log(response.data);
             });
         }
@@ -47430,7 +47430,7 @@ var render = function() {
               }
             }
           },
-          [_c("i", { staticClass: "fa fa-heart-0" })]
+          [_c("i", { staticClass: "fa fa-heart-o" })]
         )
   ])
 }
