@@ -47430,7 +47430,7 @@ var render = function() {
               }
             }
           },
-          [_c("i", { staticClass: "fa fa-hear-0" })]
+          [_c("i", { staticClass: "fa fa-heart-0" })]
         )
   ])
 }

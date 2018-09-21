@@ -13,7 +13,6 @@
                     <div class="panel-heading">
                         {{ $post->title }}
                     </div>
-
                         
                     <div class="panel-body">
                         {{ $post->body}}
