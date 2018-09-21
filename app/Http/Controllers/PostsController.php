@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -13,13 +15,12 @@ class PostsController extends Controller
      * @return Response
      */
 
-    public function index(){
-
+    public function index()
+    {
         $posts = Post::paginate(5);
-
+    
         return view('posts.index', compact('posts'));
     }
-
     /**
      * Favorite a post
      * 

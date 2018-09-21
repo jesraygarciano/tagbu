@@ -13,7 +13,7 @@
 
 Auth::routes();
 
-Route::get('/', 'PostController@index');
+Route::get('/', 'PostsController@index');
 
 Route::post('favorite/{post}', 'PostsController@favoritePost');
 Route::post('unfavorite/{post}', 'PostsController@unFavoritePost');

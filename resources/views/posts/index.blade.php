@@ -14,9 +14,19 @@
                         {{ $post->title }}
                     </div>
 
+                        
                     <div class="panel-body">
                         {{ $post->body}}
                     </div>
+
+                    @if (Auth::check())
+                        <div class="panel-footer">
+                            <favorite
+                                :post={{ $post->id }}
+                                :favorited={{ $post->favorited() ? 'true' : 'false' }}
+                            ></favorite>
+                        </div>
+                    @endif
                 </div>
                 @empty
                 <p>No Post created.</p>
